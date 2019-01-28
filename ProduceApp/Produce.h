@@ -16,8 +16,9 @@ public:
 	{
 		return (name_ < str.name_);
 	}
+
+	std::vector<std::pair<std::string, double>> nutrients_;
 private:
 	std::string name_;
-	std::vector<std::pair<std::string, double>> nutrients_;
 };
 
