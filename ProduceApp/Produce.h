@@ -1,11 +1,12 @@
 #pragma once
 #include <string>
 #include <utility>
+#include <vector>
 
 class Produce
 {
 public:
-	explicit Produce(std::string name) : name_(std::move(name)) {};
+	explicit Produce(std::string name);
 	~Produce();
 
 	void Print();
@@ -17,5 +18,6 @@ public:
 	}
 private:
 	std::string name_;
+	std::vector<std::pair<std::string, double>> nutrients_;
 };
 
